@@ -11,8 +11,13 @@ import XCTest
 
 class Test_JenkinsTests: XCTestCase {
     
+     let app = XCUIApplication()
+    
     override func setUp() {
+        
         super.setUp()
+        continueAfterFailure = false
+        app.launch()
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
@@ -26,7 +31,7 @@ class Test_JenkinsTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
-    func testPerformanceExample() {
+        func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.
